@@ -1,0 +1,26 @@
+" JSC$+ — configuração
+set nocompatible
+syntax on
+filetype plugin indent on
+
+" Tema JSC$+
+colorscheme jscplus
+
+" Conforto
+set number
+set relativenumber
+set cursorline
+set showmatch
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
+set smartindent
+set mouse=a
+set clipboard=unnamedplus
+set encoding=utf-8
+set termguicolors

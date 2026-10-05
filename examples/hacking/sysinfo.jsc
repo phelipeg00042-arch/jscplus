@@ -1,0 +1,12 @@
+@ ============================================
+@ sysinfo.jsc - Info do sistema
+@ ============================================
+
+jsc os$+
+
+printj("")$+
+printj("=== SYSTEM INFO ===")$+
+printj("Home:   " + os.home())$+
+printj("PID:    " + os.pid().to_str())$+
+printj("")$+
+printj("FIM")$+

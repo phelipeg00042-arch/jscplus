@@ -1,0 +1,30 @@
+@ ============================================
+@ variaveis.jsc - Tipos de variaveis em JSC$+
+@ ============================================
+
+@ --- Numeros inteiros ---
+idade = 17$+
+ano = 2026$+
+printj("idade: " + idade.to_str())$+
+printj("ano: " + ano.to_str())$+
+
+@ --- Numeros decimais ---
+pi = 3.14$+
+altura = 1.75$+
+printj("pi: " + pi.to_str())$+
+printj("altura: " + altura.to_str())$+
+
+@ --- Strings ---
+nome = "Phelipe"$+
+linguagem = "JSC$+"$+
+printj("nome: " + nome)$+
+printj("linguagem: " + linguagem)$+
+
+@ --- Booleanos ---
+ativo = true$+
+inativo = false$+
+printj("ativo: " + ativo.to_str())$+
+printj("inativo: " + inativo.to_str())$+
+
+printj("")$+
+printj("FIM")$+

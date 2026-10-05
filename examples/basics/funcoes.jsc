@@ -1,0 +1,50 @@
+@ ============================================
+@ funcoes.jsc - fn+, GWB e #>
+@ ============================================
+
+@ --- Funcao normal com GWB ---
+fn+ dobro(n) {
+    GWB n * 2$+
+}$+
+
+printj("dobro(21) = " + dobro(21).to_str())$+
+
+@ --- Funcao com retorno curto (#>) ---
+fn+ triplo(n) #> n * 3$+
+
+printj("triplo(7) = " + triplo(7).to_str())$+
+
+@ --- Funcao com multiplos parametros (GWB) ---
+fn+ soma(a, b) {
+    GWB a + b$+
+}$+
+
+printj("soma(3, 4) = " + soma(3, 4).to_str())$+
+
+@ --- Multiplos parametros com #> ---
+fn+ mult(a, b) #> a * b$+
+
+printj("mult(6, 7) = " + mult(6, 7).to_str())$+
+
+@ --- Recursao (precisa de GWB por causa do bloco) ---
+fn+ fatorial(n) {
+    n <= 1 >> {
+        GWB 1$+
+    }$+
+    GWB n * fatorial(n - 1)$+
+}$+
+
+printj("fatorial(5) = " + fatorial(5).to_str())$+
+
+@ --- Fibonacci ---
+fn+ fib(n) {
+    n <= 1 >> {
+        GWB n$+
+    }$+
+    GWB fib(n - 1) + fib(n - 2)$+
+}$+
+
+printj("fib(10) = " + fib(10).to_str())$+
+
+printj("")$+
+printj("FIM")$+

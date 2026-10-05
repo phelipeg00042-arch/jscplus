@@ -1,0 +1,117 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "JSC$+",
+    "scopeName": "source.jscplus",
+    "patterns": [
+        { "include": "#comments" },
+        { "include": "#terminator" },
+        { "include": "#keywords" },
+        { "include": "#natives" },
+        { "include": "#logic" },
+        { "include": "#booleans" },
+        { "include": "#numbers" },
+        { "include": "#strings" },
+        { "include": "#operators" },
+        { "include": "#punctuation" }
+    ],
+    "repository": {
+        "comments": {
+            "patterns": [
+                {
+                    "name": "comment.line.at.jscplus",
+                    "match": "@.*$"
+                }
+            ]
+        },
+        "terminator": {
+            "patterns": [
+                {
+                    "name": "keyword.control.terminator.jscplus",
+                    "match": "\\$\\+"
+                }
+            ]
+        },
+        "keywords": {
+            "patterns": [
+                {
+                    "name": "keyword.control.jscplus",
+                    "match": "\\b(if|else|for|in|while|function|return|class|extends|this|init|try|catch|finally|break|continue|jsc|import|new|async|await)\\b"
+                }
+            ]
+        },
+        "natives": {
+            "patterns": [
+                {
+                    "name": "support.function.jscplus",
+                    "match": "\\b(printj|input|spawn)\\b"
+                }
+            ]
+        },
+        "logic": {
+            "patterns": [
+                {
+                    "name": "keyword.operator.logic.jscplus",
+                    "match": "\\b(a\\+|o\\+|n\\+)\\b"
+                }
+            ]
+        },
+        "booleans": {
+            "patterns": [
+                {
+                    "name": "constant.language.jscplus",
+                    "match": "\\b(true|false|vazio)\\b"
+                }
+            ]
+        },
+        "numbers": {
+            "patterns": [
+                {
+                    "name": "constant.numeric.jscplus",
+                    "match": "\\b[0-9]+(\\.[0-9]+)?\\b"
+                }
+            ]
+        },
+        "strings": {
+            "patterns": [
+                {
+                    "name": "string.quoted.double.jscplus",
+                    "begin": "\"",
+                    "end": "\"",
+                    "patterns": [
+                        {
+                            "name": "constant.character.escape.jscplus",
+                            "match": "\\\\."
+                        }
+                    ]
+                },
+                {
+                    "name": "string.quoted.single.jscplus",
+                    "begin": "'",
+                    "end": "'",
+                    "patterns": [
+                        {
+                            "name": "constant.character.escape.jscplus",
+                            "match": "\\\\."
+                        }
+                    ]
+                }
+            ]
+        },
+        "operators": {
+            "patterns": [
+                {
+                    "name": "keyword.operator.jscplus",
+                    "match": "(==|!=|<=|>=|<<|>>|\\*\\*|\\.\\.|[+\\-*/%=<>!&|^~?:])"
+                }
+            ]
+        },
+        "punctuation": {
+            "patterns": [
+                {
+                    "name": "punctuation.jscplus",
+                    "match": "[(){}\\[\\],;.]"
+                }
+            ]
+        }
+    }
+}

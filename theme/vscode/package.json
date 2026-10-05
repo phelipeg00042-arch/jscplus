@@ -1,0 +1,59 @@
+{
+  "name": "jscplus",
+  "displayName": "JSC$+",
+  "description": "Suporte a linguagem JSC$+ (JusSec) com tema JusSec Dark",
+  "version": "0.1.0",
+  "publisher": "phelipe",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Themes"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "jscplus",
+        "aliases": [
+          "JSC$+",
+          "jscplus"
+        ],
+        "extensions": [
+          ".jsc",
+          ".jscplus"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "jscplus",
+        "scopeName": "source.jscplus",
+        "path": "./syntaxes/jscplus.tmLanguage.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "JSC+ JusSec Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/jscplus_dark-color-theme.json"
+      },
+      {
+        "label": "JSC+ Cyberpunk",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cyberpunk-color-theme.json"
+      },
+      {
+        "label": "JSC+ Ocean",
+        "uiTheme": "vs-dark",
+        "path": "./themes/ocean-color-theme.json"
+      },
+      {
+        "label": "JSC+ Ghost",
+        "uiTheme": "vs",
+        "path": "./themes/ghost-color-theme.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "$schema": "vscode://schemas/color-theme",
+  "name": "JSC+ Ghost (Light)",
+  "type": "light",
+  "colors": {
+    "editor.background": "#f0f0f0",
+    "editor.foreground": "#2a2a2a",
+    "editorLineNumber.foreground": "#808080",
+    "editorLineNumber.activeForeground": "#4a4a8a",
+    "editorCursor.foreground": "#8a4a4a",
+    "editor.selectionBackground": "#e0e0e0",
+    "editor.lineHighlightBackground": "#e8e8e8",
+    "editorIndentGuide.background": "#e0e0e0",
+    "editorWhitespace.foreground": "#e0e0e0",
+    "sideBar.background": "#f0f0f0",
+    "sideBar.foreground": "#2a2a2a",
+    "activityBar.background": "#f0f0f0",
+    "statusBar.background": "#e0e0e0",
+    "statusBar.foreground": "#2a2a2a",
+    "titleBar.activeBackground": "#f0f0f0",
+    "titleBar.activeForeground": "#2a2a2a"
+  },
+  "tokenColors": [
+    {
+      "scope": [
+        "comment"
+      ],
+      "settings": {
+        "foreground": "#808080",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": [
+        "keyword.control.terminator.jscplus"
+      ],
+      "settings": {
+        "foreground": "#8a4a4a",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": [
+        "keyword.control.jscplus",
+        "keyword.control"
+      ],
+      "settings": {
+        "foreground": "#4a4a8a"
+      }
+    },
+    {
+      "scope": [
+        "support.function.jscplus"
+      ],
+      "settings": {
+        "foreground": "#4a6a8a"
+      }
+    },
+    {
+      "scope": [
+        "keyword.operator.logic.jscplus"
+      ],
+      "settings": {
+        "foreground": "#8a6a4a"
+      }
+    },
+    {
+      "scope": [
+        "constant.language.jscplus"
+      ],
+      "settings": {
+        "foreground": "#8a6a4a"
+      }
+    },
+    {
+      "scope": [
+        "constant.numeric.jscplus"
+      ],
+      "settings": {
+        "foreground": "#4a8a8a"
+      }
+    },
+    {
+      "scope": [
+        "string.quoted.double.jscplus",
+        "string.quoted.single.jscplus"
+      ],
+      "settings": {
+        "foreground": "#8a6a4a"
+      }
+    },
+    {
+      "scope": [
+        "keyword.operator.jscplus"
+      ],
+      "settings": {
+        "foreground": "#2a2a2a"
+      }
+    },
+    {
+      "scope": [
+        "punctuation.jscplus"
+      ],
+      "settings": {
+        "foreground": "#2a2a2a"
+      }
+    },
+    {
+      "scope": [
+        "constant.character.escape.jscplus"
+      ],
+      "settings": {
+        "foreground": "#8a6a4a"
+      }
+    }
+  ]
+}

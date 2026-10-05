@@ -1,0 +1,33 @@
+@ ============================================
+@ hello.jsc - Meu primeiro programa em JSC$+
+@ ============================================
+
+printj("Oi, Phelipe")$+
+printj("A JSC$+ ta viva")$+
+
+@ --- Variaveis ---
+idade = 19$+
+
+@ --- Condicional ---
+idade > 18 >> {
+    printj("maior de idade")$+
+} << {
+    printj("menor de idade")$+
+}$+
+
+@ --- Operadores logicos ---
+verdadeiro = true$+
+falso = false$+
+
+verdadeiro a+ n+ falso >> {
+    printj("a logica ta funcionando")$+
+}$+
+
+@ --- Loop for range ---
+$> i in 1..5 {
+    printj(i)$+
+}$+
+
+@ --- FIM ---
+printj("")$+
+printj("FIM")$+

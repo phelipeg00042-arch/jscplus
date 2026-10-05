@@ -1,0 +1,46 @@
+# Binários
+jsc
+jsc-build
+jsc$+
+*.o
+*.exe
+*.out
+
+# Build
+build/
+dist/
+
+# Backups
+*.bak
+*.bak.*
+*~
+*.swp
+*.tmp
+
+# Debug
+*.dSYM/
+core
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Testes locais
+teste*.jsc
+teste*.txt
+teste*.json
+copia.txt
+recon.json
+wordlist.txt
+
+# Backups locais
+_backup_examples/
+*.backup.*
+
+# Python
+__pycache__/
+*.pyc

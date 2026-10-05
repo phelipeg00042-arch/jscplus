@@ -1,0 +1,46 @@
+@ ============================================
+@ condicionais.jsc - >> e <<
+@ ============================================
+
+@ --- Se/senao simples ---
+idade = 17$+
+
+idade >= 18 >> {
+    printj("Maior de idade")$+
+} << {
+    printj("Menor de idade")$+
+}$+
+
+@ --- Multiplas condicoes ---
+nota = 8.5$+
+
+nota >= 9 >> {
+    printj("Excelente")$+
+} << {
+    nota >= 7 >> {
+        printj("Bom")$+
+    } << {
+        nota >= 5 >> {
+            printj("Regular")$+
+        } << {
+            printj("Reprovado")$+
+        }$+
+    }$+
+}$+
+
+@ --- Logica com a+, o+, n+ ---
+tem_cnh = true$+
+tem_carro = false$+
+
+tem_cnh a+ tem_carro >> {
+    printj("Pode dirigir")$+
+} << {
+    tem_cnh o+ tem_carro >> {
+        printj("Quase la")$+
+    } << {
+        printj("Nao pode dirigir")$+
+    }$+
+}$+
+
+printj("")$+
+printj("FIM")$+

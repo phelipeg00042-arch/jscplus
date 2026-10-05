@@ -1,0 +1,22 @@
+@ ============================================
+@ arrays.jsc - Arrays e metodos
+@ ============================================
+
+nomes = ["Edward", "Empty", "Naty"]$+
+
+printj("Tamanho: " + nomes.len().to_str())$+
+
+$>| nome in nomes {
+    printj("  - " + nome)$+
+}$+
+
+@ --- Adicionar item ---
+nomes.push("Phelipe")$+
+printj("Novo tamanho: " + nomes.len().to_str())$+
+
+@ --- Indexar ---
+printj("Primeiro: " + nomes[0])$+
+printj("Ultimo: " + nomes[nomes.len() - 1])$+
+
+printj("")$+
+printj("FIM")$+

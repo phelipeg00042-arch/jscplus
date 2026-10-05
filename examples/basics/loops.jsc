@@ -1,0 +1,33 @@
+@ ============================================
+@ loops.jsc - ENQ, $> e $>|
+@ ============================================
+
+@ --- While com ENQ ---
+printj("=== ENQ (while) ===")$+
+contador = 0$+
+
+ENQ contador < 5 {
+    printj("contador: " + contador.to_str())$+
+    contador = contador + 1$+
+}$+
+
+@ --- For range com $> ---
+printj("")$+
+printj("=== for range ===")$+
+
+$> i in 1..5 {
+    printj("i: " + i.to_str())$+
+}$+
+
+@ --- For each com $>| ---
+printj("")$+
+printj("=== for each ===")$+
+
+nomes = ["Edward", "Empty", "Naty"]$+
+
+$>| nome in nomes {
+    printj("nome: " + nome)$+
+}$+
+
+printj("")$+
+printj("FIM")$+

@@ -1,0 +1,18 @@
+@ ============================================
+@ calculadora.jsc - Calculadora simples
+@ ============================================
+
+fn+ soma(a, b) { GWB a + b$+ }$+
+fn+ sub(a, b) { GWB a - b$+ }$+
+fn+ mult(a, b) { GWB a * b$+ }$+
+fn+ div(a, b) { GWB a / b$+ }$+
+
+printj("")$+
+printj("=== CALCULADORA ===")$+
+printj("")$+
+printj("10 + 5 = " + soma(10, 5).to_str())$+
+printj("10 - 5 = " + sub(10, 5).to_str())$+
+printj("10 * 5 = " + mult(10, 5).to_str())$+
+printj("10 / 5 = " + div(10, 5).to_str())$+
+printj("")$+
+printj("FIM")$+

@@ -1,0 +1,26 @@
+@ ============================================
+@ scan.jsc - Port scanner simples
+@ ============================================
+
+jsc net$+
+
+ALVO = "example.com"$+
+PORTAS = [21, 22, 80, 443, 8080, 8443]$+
+
+printj("")$+
+printj("=== PORT SCANNER ===")$+
+printj("Alvo: " + ALVO)$+
+printj("")$+
+
+ip = net.resolve(ALVO)$+
+printj("IP: " + ip)$+
+printj("")$+
+
+$>| p in PORTAS {
+    net.port_open(ALVO, p) >> {
+        printj("  [+] Porta " + p.to_str() + " ABERTA")$+
+    }
+}$+
+
+printj("")$+
+printj("FIM")$+
