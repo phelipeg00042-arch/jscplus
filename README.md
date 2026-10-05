@@ -262,7 +262,7 @@ nem a mais bonita. Ela tenta ser livre — pra você fazer o que
 quiser, do jeito que quiser.
 
 Feita com café, ódio e amor.
-Sem framework. Sem IDE. Sem desculpa.
+Sem framework. Sem desculpa.
 
 ---
 
