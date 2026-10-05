@@ -36,7 +36,7 @@ e compilado.
 
 ### Compilar
 
-    git clone https://github.com/PhelipeMendes/jscplus.git
+    git clone https://github.com/phelipeg00042-arch/jscplus.git
     cd jscplus
     make
 
