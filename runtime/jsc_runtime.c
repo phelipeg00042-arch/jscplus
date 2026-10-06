@@ -298,6 +298,27 @@ JscValue *jsc_method_call(JscValue *obj, const char *name, int argc, ...) {
         return jsc_array_pop(obj);
     }
     
+    /* .to_str() */
+    if (strcmp(name, "to_str") == 0) {
+        va_end(args);
+        char buf[64];
+        if (obj->type == JSC_INT) {
+            snprintf(buf, sizeof(buf), "%lld", (long long)obj->as.i);
+            return jsc_string(buf);
+        }
+        if (obj->type == JSC_FLOAT) {
+            snprintf(buf, sizeof(buf), "%g", obj->as.f);
+            return jsc_string(buf);
+        }
+        if (obj->type == JSC_STRING) {
+            return jsc_string(obj->as.s);
+        }
+        if (obj->type == JSC_BOOL) {
+            return jsc_string(obj->as.i ? "true" : "false");
+        }
+        return jsc_string("vazio");
+    }
+
     /* Metodo de classe registrado */
     {
         JscValue *cls_v = jsc_map_get(obj, "__class__");
