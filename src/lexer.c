@@ -74,8 +74,7 @@ static TokenType keyword_type(const char *s) {
     /* Nativos */
     if (strcmp(s, "jsc")      == 0) return TOK_JSC;
     if (strcmp(s, "printj")   == 0) return TOK_PRINTJ;
-    if (strcmp(s, "input")    == 0) return TOK_INPUT;
-    if (strcmp(s, "import")   == 0) return TOK_IMPORT;
+    // input agora e funcao, nao keyword
 
     return TOK_IDENT;
 }
